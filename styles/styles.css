@@ -1,4 +1,4 @@
-body {
+body, h1, p, h2 {
     margin: 0;
 }
 .container {
@@ -6,14 +6,124 @@ body {
 }
 .header__comp {
     display: flex;
-    gap: 23px;
-    width: 200px;
+    justify-content: space-between;
+}
+.comp__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header__logo {
     width: 86px;
     height: 63px;
     background-image: url("../images/logo.svg");
+    margin-right: 23px;
 }
 .header__name {
     width: 88px;
+    margin-right: 64px;
+}
+.header__slog {
+    font-size: 12px;
+    width: 227px;
+}
+.comp__signIn {
+    margin-left: 36px;
+    border: 0;
+    background-color: #273895;
+    color: #fff;
+    width: 115px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.header__nav {
+    margin-top: 48px;
+    display: flex;
+    gap: 48px;
+}
+.section1 {
+    margin-top: 55px;
+    display: flex;
+}
+.section1__desc {
+    flex-basis: 733px;
+}
+.desc__title {
+    font-size: 48px;
+    margin-top: 65px;
+}
+.desc__body {
+    margin-top: 16px;
+    font-size: 14px;
+    width: 547px;
+}
+.desc__button {
+    margin-top: 32px;
+    border: 0;
+    background-color: #273895;
+    border-radius: 15px;
+    width: 268px;
+    height: 56px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.section1__opps {
+    background-image: url("../images/section1-background.svg");
+    width: 438px;
+    height: 488px;
+    position: relative;
+}
+.opps__income {
+    background-image: url("../images/section1_income.svg");
+    width: 145px;
+    height: 145px;
+    position: absolute;
+    top: -76px;
+    right: 67px;
+}
+.opps__wrapper {
+    width: 712px;
+    height: 164px;
+    position: absolute;
+    bottom: -82px;
+    right: -77px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px #D0DAE3;
+    box-sizing: border-box;
+    padding: 32px;
+}
+.opps__opp {
+    display: flex;
+    gap: 32px;
+    margin: 0 48px;
+    position: absolute;
+    bottom: 32px;
+}
+.opp__item {
+    display: flex;
+    flex-direction: column;
+}
+.item__support {
+    background-image: url("../images/opps_support.svg");
+    width: 44px;
+    height: 42px;
+}
+.item__opportunities {
+    background-image: url("../images/opps_opportunities.svg");
+    width: 40px;
+    height: 40px;
+}
+.item__bonus {
+    background-image: url("../images/opps_bonus.svg");
+    width: 53px;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+.item__title {
+    font-size: 16px;
+    margin-top: 8px;
 }
