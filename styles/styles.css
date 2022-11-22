@@ -75,9 +75,12 @@ body, h1, p, h2 {
 }
 .section1__opps {
     background-image: url("../images/section1-background.svg");
-    width: 438px;
+    flex-basis: 438px;
     height: 488px;
     position: relative;
+}
+.opps__wrapper {
+
 }
 .opps__income {
     background-image: url("../images/section1_income.svg");
