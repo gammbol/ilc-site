@@ -49,6 +49,7 @@ body, h1, p, h2 {
     margin-top: 55px;
     display: flex;
     width: 100%;
+    justify-content: space-between;
 }
 .section1__desc {
     flex-basis: 733px;
@@ -78,6 +79,7 @@ body, h1, p, h2 {
     flex-basis: 438px;
     height: 488px;
     position: relative;
+    right: 110px;
 }
 .opps__wrapper {
 
