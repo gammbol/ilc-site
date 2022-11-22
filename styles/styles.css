@@ -48,6 +48,7 @@ body, h1, p, h2 {
 .section1 {
     margin-top: 55px;
     display: flex;
+    width: 100%;
 }
 .section1__desc {
     flex-basis: 733px;
