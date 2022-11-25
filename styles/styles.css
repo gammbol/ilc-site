@@ -255,6 +255,7 @@ body {
     display: flex;
     gap: 16px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .section3__item {
     margin-top: 31px;
@@ -335,6 +336,7 @@ body {
     position: absolute;
     top: -14px;
     right: -46px;
+    box-shadow: 0 14px 40px 0 #BBA6FF;
 }
 .question__title {
     text-align: center;
@@ -347,6 +349,7 @@ body {
     background: -webkit-linear-gradient(#2641D1, #3333A3);
     padding: 16px 24px;
     border-radius: 8px;
+    cursor: pointer;
 }
 .section4__main {
     flex-basis: 440px;
@@ -365,4 +368,51 @@ body {
 }
 .section4__adv {
     display: flex;
+    gap: 32px;
+    position: absolute;
+    top: 93%;
+}
+.adv__item {
+    background-color: white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 32px;
+    width: 236px;
+}
+.adv__title {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #404040;
+}
+.adv__body {
+    margin-top: 16px;
+    color: #404040;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.chat_logo {
+    background-image: url("../images/chat.svg");
+    width: 58px;
+    height: 58px;
+}
+.coin_logo {
+    background-image: url("../images/coins.svg");
+    width: 75px;
+    height: 58px;
+}
+.calc_logo {
+    background-image: url("../images/calc.svg");
+    width: 44px;
+    height: 62px;
+}
+.docs_logo {
+    background-image: url("../images/docs.svg");
+    width: 45px;
+    height: 62px;
+}
+.lock_logo {
+    background-image: url("../images/lock.svg");
+    width: 62px;
+    height: 62px;
 }
