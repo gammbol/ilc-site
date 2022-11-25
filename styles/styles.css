@@ -306,6 +306,7 @@ body {
 .section4__flex {
     margin-top: 32px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -368,6 +369,7 @@ body {
 }
 .section4__adv {
     display: flex;
+    justify-content: center;
     gap: 32px;
     position: absolute;
     top: 93%;
