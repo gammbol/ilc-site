@@ -83,6 +83,10 @@ body {
     font-weight: 500;
     color: black;
     text-decoration: none;
+    transition: 0.3s all;
+}
+.header__link:hover {
+    color: #34449C;
 }
 .section1 {
     margin-top: 55px;
