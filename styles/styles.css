@@ -19,13 +19,16 @@
 body, h1, p, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+ul {
+    padding: 0;
+}
 body {
     font-family: "Gotham Pro", sans-serif;
     background-color: #f3f7fa;
 }
 .container {
-    margin: 48px auto 0;
     max-width: 1280px;
+    margin: 48px auto 0;
 }
 .header__comp {
     display: flex;
@@ -117,6 +120,7 @@ body {
     height: 488px;
     position: relative;
     right: 110px;
+    z-index: -1;
 }
 .opps__income {
     background-image: url("../images/section1_income.svg");
@@ -373,13 +377,18 @@ body {
     gap: 32px;
     position: absolute;
     top: 93%;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    left: 0;
+    right: 0;
 }
 .adv__item {
     background-color: white;
     border-radius: 15px;
     box-sizing: border-box;
     padding: 32px;
-    width: 236px;
+    flex-basis: 226px;
 }
 .adv__title {
     margin-top: 16px;
@@ -417,4 +426,184 @@ body {
     background-image: url("../images/lock.svg");
     width: 62px;
     height: 62px;
+}
+.section5 {
+    margin-top: 419px;
+}
+.section5__title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+.section5__body {
+    text-align: center;
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #404040;
+}
+.section5__btns {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.section5__btn {
+    margin-top: 32px;
+    width: 133px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn_primary {
+    background-color: #273895;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 15px;
+}
+.btn_secondary {
+    line-height: 1.5;
+    text-decoration: dashed;
+    background: transparent;
+    border: none;
+    color: #273895;
+}
+.section5__flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 33px;
+    flex-wrap: wrap;
+}
+.flex-basis-100 {
+    flex-basis: 100%;
+}
+.flex-grow-50 {
+    flex-grow: 1;
+}
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+.section5__itemBig {
+    padding: 48px 187px;
+    border-radius: 15px;
+    background-color: white;
+}
+.section5__itemSmall {
+    border-radius: 15px;
+    background-color: white;
+    padding: 48px;
+}
+.section5__flex__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #2741D0;
+    letter-spacing:2px;
+}
+.section5__flex__subTitle {
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    color: #C9C9C9;
+    margin-top: 8px;
+}
+.section5__flex__body {
+    text-align: center;
+    font-size: 14px;
+    color: #737373;
+    margin-top: 16px;
+}
+.access__title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+    color: #404040;
+}
+.access__wrapper {
+    display: flex;
+    gap: 35px;
+    max-width: 640px;
+    margin: 16px auto 0;
+}
+.access__list {
+    flex-basis: 370px;
+    list-style: url("../images/list-style.svg");
+    margin-top: 16px;
+}
+.access__item {
+    font-size: 16px;
+    color: #404040;
+    margin-left: 20px;
+    margin-bottom: 16px;
+}
+.ml-35 {
+    margin-left: 35px;
+}
+.section5__link-wrapper {
+    margin-top: 28px;
+}
+.section5__link {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    color: #2741D0;
+    text-decoration: none;
+}
+.flex-left {
+    justify-content: left !important;
+}
+.section5__link__logo {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background-image: url("../images/arrow.svg");
+}
+.section5__button {
+    background-color: #273895;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    padding: 15px 36px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.left {
+    text-align: left;
+}
+.section5__flex__price {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.pl-8 {
+    padding-left: 8px;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.section6 {
+    margin: 144px auto 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+    padding-top: 88px;
+    padding-bottom: 205px;
+    padding-left: 196px;
+    background-image: url("../images/section6.svg");
+}
+.section6__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+.section6__body {
+    margin-top: 16px;
+    font-weight: 500;
+    color: white;
+    line-height: 1.5;
+    max-width: 320px;
 }
