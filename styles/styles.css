@@ -31,6 +31,7 @@ body {
     margin: 48px auto 0;
     padding: 0 25px;
 }
+
 .header__comp {
     display: flex;
     justify-content: space-between;
