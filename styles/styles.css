@@ -2,6 +2,12 @@
 
 @font-face {
     font-family: "Gotham Pro", sans-serif;
+    src: url("../fonts/gothamPro/gothampro_light.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Gotham Pro", sans-serif;
     src: url("../fonts/gothamPro/gothampro.ttf") format("truetype");
     font-weight: 400;
 }
@@ -16,7 +22,13 @@
     font-weight: 600;
 }
 
-body, h1, p, h2, h3, h4, h5, h6 {
+@font-face {
+    font-family: "Gotham Pro", sans-serif;
+    src: url("../fonts/gothamPro/gothampro_italic.ttf");
+    font-style: italic;
+}
+
+body, h1, p, h2, h3, h4, h5, h6, ul {
     margin: 0;
 }
 ul {
@@ -24,7 +36,9 @@ ul {
 }
 body {
     font-family: "Gotham Pro", sans-serif;
+    font-weight: 400;
     background-color: #f3f7fa;
+    color: #404040;
 }
 .container {
     max-width: 1280px;
@@ -689,6 +703,7 @@ body {
     padding: 16px 32px;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
 }
 .section8 {
     margin-top: 144px;
@@ -790,4 +805,126 @@ body {
     color: white;
     font-size: 16px;
     padding: 16px;
+}
+.section9 {
+    display: flex;
+    gap: 96px;
+    margin: 144px;
+}
+.section9__img {
+    background-image: url("../images/section9_worker.svg");
+    width: 419px;
+    height: 584px;
+    flex-shrink: 0;
+    position: relative;
+}
+.section9__quote {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 14px 40px 0 rgba(187, 166, 255, 0.2);
+    padding: 32px;
+    position: absolute;
+    bottom: -27px;
+    left: 130px;
+    right: -128px;
+}
+.section9__quote__logo {
+    background-image: url("../images/quotes.svg");
+    width: 40px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.section9__quote__body {
+    margin-top: 6px;
+    font-style: italic;
+}
+.info__occupation {
+    margin-top: 56px;
+}
+.info__name {
+    font-weight: 700px;
+    font-size: 32px;
+}
+.info__exp {
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.info__body {
+    margin-top: 32px;
+}
+.info__details {
+    margin-top: 16px;
+}
+.info__list {
+    margin-left: 25px;
+}
+.info__button {
+    margin-top: 32px;
+    padding: 16px 32px;
+    background-color: #273895;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.footer {
+    border-top: 1px solid #DEE6EF;
+}
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__padding {
+    padding: 32px 0;
+}
+.footer-width {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.footer__icons {
+    display: flex;
+    gap: 8px;
+}
+.icons {
+    border: 1px solid #CFDAE7;
+    border-radius: 10px;
+    background-color: white;
+}
+.icons_40 {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icons__vk {
+    background-image: url("../images/icons_vk.svg");
+}
+.icons__instagram {
+    background-image: url("../images/icons_inst.svg");
+}
+.icons__tweeter {
+    background-image: url("../images/icons_tweeter.svg");
+}
+.icons__facebook {
+    background-image: url("../images/icons_facebook.png");
+}
+.footer__copyright {
+    padding: 16px 0;
+    background-color: #E8EDF3;
+}
+.copyright__links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    gap: 16px;
+}
+.copyright__body, .copyright__link {
+    color: #7A7A7A;
+    font-size: 12px;
+    font-weight: 200;
+    text-decoration: none;
 }
