@@ -142,6 +142,7 @@ body {
     position: relative;
     right: 110px;
     z-index: -1;
+    flex-shrink: 0;
 }
 .opps__income {
     background-image: url("../images/section1_income.svg");
@@ -396,7 +397,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 32px;
-    position: absolute;
+    position: relative;
     top: 93%;
     width: 100%;
     margin: 0 auto;
@@ -449,7 +450,7 @@ body {
     height: 62px;
 }
 .section5 {
-    margin-top: 419px;
+    margin-top: 144px;
 }
 .section5__title {
     text-align: center;
@@ -805,6 +806,7 @@ body {
     color: white;
     font-size: 16px;
     padding: 16px;
+    cursor: pointer;
 }
 .section9 {
     display: flex;
