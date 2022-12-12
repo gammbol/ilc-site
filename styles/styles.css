@@ -49,6 +49,7 @@ body {
 .header__comp {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .comp__item {
     display: flex;
@@ -93,6 +94,7 @@ body {
 .header__nav {
     margin-top: 48px;
     display: flex;
+    flex-wrap: wrap;
     gap: 48px;
 }
 .header__link {
@@ -109,7 +111,9 @@ body {
     margin-top: 55px;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 .section1__desc {
     flex-basis: 733px;
@@ -140,7 +144,6 @@ body {
     flex-basis: 438px;
     height: 488px;
     position: relative;
-    right: 110px;
     z-index: -1;
     flex-shrink: 0;
 }
@@ -202,6 +205,8 @@ body {
     margin-top: 230px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 .first {
     max-width: 438px;
@@ -285,7 +290,7 @@ body {
 }
 .section3__item {
     margin-top: 31px;
-    width: 29%;
+    flex-basis: 343px;
     box-sizing: border-box;
     padding: 32px;
     background-color: white;
@@ -320,9 +325,6 @@ body {
     font-weight: 300;
     margin-top: 16px;
 }
-.section4 {
-    position: relative;
-}
 .section4__mainTitle {
     margin-top: 144px;
     font-size: 32px;
@@ -330,7 +332,8 @@ body {
     text-align: center;
 }
 .section4__flex {
-    margin-top: 32px;
+    margin: 32px auto 0;
+    gap: 32px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -338,9 +341,11 @@ body {
 }
 .section4__background {
     background-image: url("../images/section4_background.svg");
-    width: 219px;
     height: 410px;
+    width: 219px;
     position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .section4__title {
     font-size: 16px;
@@ -379,8 +384,8 @@ body {
     cursor: pointer;
 }
 .section4__main {
+    margin-left: 45px;
     flex-basis: 440px;
-    margin-left: 75px;
 }
 .section4__addition {
     margin-left: 32px;
@@ -410,7 +415,8 @@ body {
     border-radius: 15px;
     box-sizing: border-box;
     padding: 32px;
-    flex-basis: 226px;
+    width: 226px;
+    flex-shrink: 0;
 }
 .adv__title {
     margin-top: 16px;
@@ -546,8 +552,9 @@ body {
 }
 .access__wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 35px;
-    max-width: 640px;
+    justify-content: center;
     margin: 16px auto 0;
 }
 .access__list {
@@ -640,8 +647,9 @@ body {
     align-items: center;
 }
 .section7__item {
-    padding: 48px 187px 48px 110px;
-    max-width: 85%;
+    padding: 48px;
+    flex-basis: 85%;
+    max-width: 1070px;
     box-sizing: border-box;
     background-color: white;
     border-radius: 20px;
@@ -669,7 +677,13 @@ body {
 }
 .section7__flex__wrapper {
     display: flex;
+    justify-content: center;
     gap: 32px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.item__content {
+    max-width: 515px;
 }
 .gap-64 {
     gap: 64px;
@@ -720,6 +734,7 @@ body {
     background-position: center;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
     margin-top: 48px;
 }
@@ -740,10 +755,11 @@ body {
 }
 .section8__big-box {
     padding: 73px 40px 57px 40px;
+    box-sizing: border-box;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 100px 0 rgba(208, 218, 227, 0.57);
-    flex-basis: 20%;
+    flex-basis: 312px;
 }
 .section8__medium-box::before {
     content: "";
@@ -759,10 +775,11 @@ body {
 .section8__medium-box {
     position: relative;
     padding: 40px;
+    box-sizing: border-box;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 100px 0 rgba(208, 218, 227, 0.57);
-    flex-basis: 20%;
+    flex-basis: 312px;
     align-self: flex-start;
 }
 .section8__strategy {
@@ -810,8 +827,13 @@ body {
 }
 .section9 {
     display: flex;
+    justify-content: center;
     gap: 96px;
-    margin: 144px;
+    margin-top: 144px;
+    flex-wrap: wrap;
+}
+.section9__info {
+    max-width: 470px;
 }
 .section9__img {
     background-image: url("../images/section9_worker.svg");
@@ -874,11 +896,13 @@ body {
 }
 .footer {
     border-top: 1px solid #DEE6EF;
+    margin-top: 171px
 }
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .footer__padding {
     padding: 32px 0;
