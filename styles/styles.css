@@ -239,6 +239,12 @@ body {
     flex-direction: column;
     gap: 17px;
 }
+.section2__row:first-of-type {
+    align-items: flex-end;
+}
+.section2__row:last-of-type {
+    margin-top: 16px;
+}
 .section2__title {
     font-size: 32px;
     margin-top: 32px;
@@ -1165,12 +1171,6 @@ body {
     }
     .section8__big-box {
         padding: 35px 20px 25px 20px;
-    }
-    .section2__row:last-of-type {
-        margin-top: 16px;
-    }
-    .section2__row:first-of-type {
-        align-items: flex-end;
     }
     .section2 {
         justify-content: center;
