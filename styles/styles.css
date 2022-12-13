@@ -1003,7 +1003,10 @@ body {
 
 @media (max-width: 1100px) {
     .container {
-        padding: 10px;
+        padding: 0;
+    }
+    .container > * {
+        padding: 0 10px;
     }
     .opps__income {
         left: 0;
@@ -1189,7 +1192,8 @@ body {
         text-align: center;
     }
     .section8__medium-box {
-        flex-grow: 1;
+        flex-basis: 312px;
+        box-sizing: border-box;
     }
     .info__body, .info__list, .info__details, .info__body__addition {
         font-size: 12px;
@@ -1198,7 +1202,10 @@ body {
 
 @media (max-width: 778px) {
     .container {
-        margin-top: 0;
+        margin-top: 10px;
+    }
+    .header__comp {
+        align-items: center;
     }
     .burger__wrapper {
         display: block;
@@ -1210,7 +1217,35 @@ body {
         display: none;
     }
     .header__nav {
-        display: none;
+        opacity: 1;
+        position: absolute;
+        visibility: hidden;
+        top: 100px;
+        left: 20px;
+        right: 20px;
+        margin: 0 auto;
+        background: white;
+        transition: all 0.5s;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    .header__link {
+        border-bottom: 1px solid gray;
+    }
+    .header__nav__wrapper {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 1;
+        opacity: 0;
+        background-color: rgba(82, 81, 81, 0.67);
+        pointer-events: none;
+        transition: 0.5s all;
     }
     .section2__row .item__body {
         font-size: 10px;
