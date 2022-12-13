@@ -990,6 +990,9 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.header__menu__adaptive {
+    display: none;
+}
 .burger__wrapper {
     width: 50px;
     height: 50px;
@@ -998,13 +1001,111 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 7px;
-    display: none;
+}
+.signin__wrapper {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to left top, #2641D1, #3333A3);
+    border-radius: 7px;
+}
+.signin__logo {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/signup_logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .comp__item__wrapper {
     display: flex;
     justify-content: center;
     gap: 23px;
     align-items: center;
+}
+.header__signin__wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(225, 225, 225, 0.56);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s all;
+
+}
+.header__signin {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 672px;
+    max-height: 50%;
+    margin: auto;
+    background-color: #F4F7FA;
+    border-radius: 10px;
+    box-shadow: 0 4px 100px 0 rgba(208, 218, 227, 0.57);
+    padding: 64px 96px;
+    gap: 24px;
+}
+.signin__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 298px;
+    gap: 8px;
+}
+.signin__name, .signin__email {
+    width: 298px;
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid #E4E4E4;
+}
+.signin__title, .signin__form {
+    max-width: 480px;
+}
+.signin__title {
+    text-align: center;
+}
+.signin__name {
+    padding: 0;
+    background-image: url('../images/signin_name.svg');
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    box-sizing: border-box;
+    text-indent: 40px;
+}
+.signin__email {
+    padding: 0;
+    background-image: url('../images/signin_email.svg');
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
+    box-sizing: border-box;
+    text-indent: 40px;
+}
+.signin__submit {
+    width: 218px;
+    height: 56px;
+    border-radius: 15px;
+    background-color: #273895;
+    color: white;
+    border: none;
+}
+.close_button {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-image: url('../images/close_button.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
 }
 
 @media (max-width: 1100px) {
@@ -1032,6 +1133,7 @@ body {
     .opps__wrapper {
         left: 0;
         right: 0;
+        top: 100px;
         margin: 0 auto;
         width: auto;
         height: 402px;
@@ -1048,7 +1150,7 @@ body {
         text-align: center;
     }
     .section1__desc {
-        background-image: url("../images/section1-background.svg");
+        background-image: url("../images/phone_section1_bg.svg");
         background-repeat: no-repeat;
         background-position: center;
         height: 503px;
@@ -1063,9 +1165,6 @@ body {
     }
     .desc__body, .desc__button {
         margin: 16px auto 0;
-    }
-    .opps__income {
-        top: 0;
     }
     .section1__btn__wrapper {
         display: flex;
@@ -1174,6 +1273,7 @@ body {
     }
     .section2 {
         justify-content: center;
+        margin-top: 0;
     }
     .section2__bg {
         gap: 10px;
@@ -1198,6 +1298,20 @@ body {
     .info__body, .info__list, .info__details, .info__body__addition {
         font-size: 12px;
     }
+    .header .header__name {
+        font-size: 8px;
+        width: 45px;
+    }
+    .header .header__logo {
+        width: 40px;
+        height: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .comp__item__wrapper {
+        gap: 10px;
+    }
 }
 
 @media (max-width: 778px) {
@@ -1207,8 +1321,9 @@ body {
     .header__comp {
         align-items: center;
     }
-    .burger__wrapper {
-        display: block;
+    .header__menu__adaptive {
+        display: flex;
+        gap: 8px;
     }
     .header__info__wrapper {
         display: none;
@@ -1249,5 +1364,10 @@ body {
     }
     .section2__row .item__body {
         font-size: 10px;
+    }
+    .header__signin {
+        padding: 0;
+        height: 400px;
+        margin: auto 10px;
     }
 } 
